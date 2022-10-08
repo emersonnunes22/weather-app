@@ -1,9 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
 
-
-
-
 function App() {
 const [ city, setCity ] = useState('');
 const input = document.querySelector('.Input');

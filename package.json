@@ -1,8 +1,9 @@
 {
   "name": "weather-app",
   "version": "0.2.0",
-  "private": true;
-  "homepage": "https://emersonnunes22.github.io/weather-app/",
+  "private": true,
+  "homepage": "https://emersonnunes22.github.io/weather-app",
+
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -18,9 +19,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

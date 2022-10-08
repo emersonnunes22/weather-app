@@ -152,3 +152,9 @@
 .Ceu h2 {
  font-size: 1em;
 }
+
+@media (min-width: 1080px) {
+  .Card {
+    transform: scale(1.4);
+  }
+}
