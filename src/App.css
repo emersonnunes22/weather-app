@@ -19,11 +19,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: blue;
+  background-image: url("https://images.pexels.com/photos/534049/pexels-photo-534049.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .Card {
-  background-color: #958AFF;
-  color: #2D2D2D;
+  background-color: white;
+  color: black;
   width: 28em;
   height: 28em;
   max-width: 80%;
@@ -32,35 +34,31 @@
   flex-direction: column;
   justify-content: center;
   align-items: space-around;
-  padding-top: 3.2em;
-  padding-left: 2.6em;
-  padding-right: 2.6em;
-  padding-bottom: 2em;
+  padding: 2.2em  2.6em;
 }
 .Card form {
   width: 100%;
   height: 20%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 .Input {
   display: flex;
-  width: 160px;
+  width: 168px;
   height: 36px;
-  background-color: white;
+  background-color: #DAEDFF;
   border: none;
   border-radius: 0.6em;
   padding-left: 0.8em;
   font-weight: 500;
   font-size: 15px;
-  color: #2D2D2D;
 }
 .Input::placeholder {
   font-weight: 400;
-  font-size: 18px;
-  color: #A4A4A4;
+  font-size: 15.6px;
+  color: #778899;
 }
 .Card form:focus, .Input:focus {
   box-shadow: 0 0 0 0;
@@ -71,13 +69,13 @@
   height: 36px;
   border: none;
   border-radius: 0.6em;
-  background-color: orange;
+  background-color: black;
   padding: 0.6em;
 }
 #Icon-lupa {
   font-weight: 700;
   font-size: 1.6em;
-  color: #2D2D2D;
+  color: white;
 }
 .Dados {
   width: 100%;
@@ -89,11 +87,15 @@
   position: relative;
 }
 .Cidade {
-  font-size: 1.4em;
+  font-size: 1.8em;
   font-weight: 500;
+  color: black;
+}
+.Cidade.small {
+  font-size: 1.45em;
 }
 .Temp-celsius {
-  width: 10em;
+  width: 11em;
   height: 8.5em;
   display: flex;
   flex-direction: row;
@@ -104,26 +106,26 @@
   z-index: 2;
 }
 .Temp {
-  font-size: 6.5em;
+  font-size: 6.2em;
   font-weight: 600;
 }
 .Celsius {
-  font-size: 2em;
+  font-size: 2.6em;
   font-weight: 700;
-  margin-bottom: 1.6em;
+  margin-bottom: 1.2em;
 }
 .Ventos {
   height: 5em;
   width: 6.5em;
   position: absolute;
-  top: 0;
-  bottom: 0;
+  bottom: 4em;
   margin: auto 0;
   left: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-weight: 600;
 }
 .Vel-do-vento {
   display: flex;
@@ -135,30 +137,45 @@
 .Ventos h2 {
   font-size: 0.9em;
 }
-.Ventos p {
+.Vel-do-vento p {
   font-size: 1em;
-  color: orange;
 }
 #Icon-wind {
-  color: skyBlue;
+  font-size: 1.2em;
+}
+.Weather-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4.5em;
+  height: 4.5em;
+  position: absolute;
+  bottom: 4em;
+  right: 0;
+  margin: auto 0;
+  background-color: #4169E1;
+  border-radius: 1em;
 }
 .Weather-icon {
-  position: absolute;
-  bottom: 0.6em;
-  right: -0.6em;
-  margin: auto 0;
-  width: 9em;
-  height: 9em;
+ width: 100%;
+ height: 100%;
 }
 
 .Dados-extras {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-end;
   width: 100%;
   height: 20%;
   font-size: 1.2em;
+  font-weight: 600;
+}
+.Dados-extras h2 {
+  font-size: 1em;
+}
+.Dados-extras p {
+  font-size: 0.86em;
 }
 .Humidade {
   display: flex;
@@ -166,21 +183,14 @@
   justify-content: center;
   align-items: center;
 }
-.Humidade h2 {
-  font-size: 1em;
-}
 .Ceu {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.Ceu h2 {
- font-size: 1em;
-}
-
-@media (min-width: 1080px) {
+@media (min-width: 960px) {
   .Card {
-    transform: scale(1.4);
+    transform: scale(1.5);
   }
 }
