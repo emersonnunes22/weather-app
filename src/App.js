@@ -15,9 +15,9 @@ const weatherIcon = document.querySelector('.Weather-icon');
  async function fetchApi (event) {
    if( city != "") {
   event.preventDefault();
-  const cityvalor = city;
+  const cityValor = city;
    let key = process.env.REACT_APP_API_KEY;
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityvalor},BR&appid=${key}&units=metric&lang=pt_br`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityValor},BR&appid=${key}&units=metric&lang=pt_br`;
   const response = await fetch(url);
   const data = await response.json();
   if(response.status == 404) {
