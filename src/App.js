@@ -76,7 +76,7 @@ const weatherIcon = document.querySelector('.Weather-icon');
      </div>
      <div className="Ceu">
      <h2>Agora:</h2>
-     <p>--</p>
+     <p>---</p>
      </div>
      </div>
      </div>
